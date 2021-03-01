@@ -53,26 +53,30 @@ let messages = ["wear a warm coat, hat, scarf, and gloves.", "wear a warm coat b
 // > blank line between 'blocks' of code (lines of code that are accomplishing some activity)
 
 /*
-The following code block is for the if statement. There are 4 conditions that will
-produce a unique message that is personalized for the user based off of the name 
-that was inputted through the prompt. The fifth condition is for states that are not
-specified
+The following code block is a switch statement that displays a unique message for the user
+based on the variables that are inputted through a prompt. 
 */
 
 /*
-if (state == "NE" && temperature < 32) { 
+switch (true) {
+case (state == "NE" && temperature < 32):
   console.log(`${name}, ${messages[0]}`)
- } else if (state == "NE" && temperature > 32 && temperature < 50) { 
+  break;
+case (state == "NE" && temperature > 32 && temperature < 50):
   console.log(`${name}, ${messages[1]}`)
- } else if (state == "FL" && temperature > 32 && temperature < 50) { 
+  break;
+case (state == "FL" && temperature > 32 && temperature < 50):
   console.log(`${name}, ${messages[2]}`)
- } else if (state == "FL" && temperature > 50 && temperature < 70) { 
+  break;
+case (state == "FL" && temperature > 50 && temperature < 70):
   console.log(`${name}, ${messages[3]}`)
- } else {
-  console.log("For your state, I have no advice")
- }
-
+  break;
+}
 */
+
+
+
+
 
 
 
