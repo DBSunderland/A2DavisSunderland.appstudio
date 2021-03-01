@@ -22,7 +22,7 @@ switch statement(s). Put each program on a different form in the same project.
 let name = prompt("Enter your name")
 let state = prompt("Enter your state's 2-letter code (capitalized)")
 let temperature = prompt("Please enter the current temperature outside (in Fahrenheit)")
-let messages = ["wear a warm coat, hat, scarf, and gloves.", "wear a warm coat but you won't need a hat, scarf, or gloves.", "wear your warmest coat, a had, a scarf, and warm gloves.", "wear a warm coat, hat and gloves. Maybe a scarf too."]
+let messages = ["wear a warm coat, hat, scarf, and gloves.", "wear a warm coat but you won't need a hat, scarf, or gloves.", "wear your warmest coat, a hat, a scarf, and warm gloves.", "wear a warm coat, hat and gloves. Maybe a scarf too."]
 
 /*
 console.log(stateArray)
@@ -43,18 +43,22 @@ console.log(temperatureArray)
 // g. all outputs should be nicely formatted and addressed to the user:
 //     eg. Mary, blah blah blah.
 // h. below are the messages to output based on the state and temperature received from the user. 
-// messages cannot be hard-coded (that is, typed into the program where needed for output)
+// messages cannot be hard-coded (that is, typed into the program where needed for output).
 
-/*
-if state = 'NE' && temperature < 32 { 
+
+if (state == "NE" && temperature < 32) { 
   console.log(`${name}, ${messages[0]}`)
-} else if { 
-} else if { 
-} else if { 
-} else if { 
-}
+ } else if (state == "NE" && temperature > 32 && temperature < 50) { 
+  console.log(`${name}, ${messages[1]}`)
+ } else if (state == "FL" && temperature > 32 && temperature < 50) { 
+  console.log(`${name}, ${messages[2]}`)
+ } else if (state == "FL" && temperature > 50 && temperature < 70) { 
+  console.log(`${name}, ${messages[3]}`)
+ } else {
+  console.log("For your state, I have no advice")
+ }
 
-*/
+
 
 
 
